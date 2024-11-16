@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boltz Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Boltz Search</h1>
+        </header>
+        <main>
+            <div class="icons-panel">
+                <div class="icon" onclick="showInput('Consulta CNPJ')">CNPJ</div>
+                <!-- Adicione outros ícones aqui, se necessário -->
+            </div>
+            <div class="input-panel">
+                <h2 id="input-title">Clique em um ícone para começar</h2>
+                <input type="text" id="input-field" placeholder="Digite o CNPJ (somente números)..." />
+                <button id="search-button" onclick="search()">Consultar</button>
+            </div>
+            <div id="result"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
